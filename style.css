@@ -1,32 +1,84 @@
 /* IMPORT GOOGLE FONTS  */
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Koulen&family=Libre+Bodoni:ital,wght@1,700&family=Oleo+Script+Swash+Caps&family=Poppins:wght@300;400;500;600;800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
-body, .wrapper , .content{
+body,
+.wrapper,
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-body{
+
+body {
     background-color: aqua;
     height: 100vh;
 }
-.wrapper{
+
+.wrapper {
     width: 400px;
     border-radius: 10px;
     flex-direction: column;
     background: #fff;
     height: 500px;
 }
-.wrapper .content{
+
+.wrapper .content {
     width: 100%;
     justify-content: space-between;
 }
+
+.content .column {
+    border-radius: 5px;
+}
+
+.wrapper img {
+    max-width: 200px;
+}
+
+.wrapper h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.wrapper .content {
+    justify-content: center;
+    width: 100%;
+    /* padding: 0; */
+    outline: none;
+    border: none;
+    height: 32px;
+}
+button {
+    width: 204px;
+    height: 38px;
+}     
 .content .column{
     border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid black;
+    width: calc(100% / 3 - 5px);
+    
+}
+.column select{
+    outline: none;
+    border: none;
+    height: 53px;
+    width: 100%;
+    font-size: 19px;
+}
+button {
+    width: 364px;
+    height: 53px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: black;
+    color: #fff;
 }
